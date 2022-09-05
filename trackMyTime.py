@@ -5,15 +5,13 @@ from timesheet.TimesheetTracker import TimesheetTracker
 
 # 		Setup
 # ________________________________
-
 year = 2022
 month = 9
 startDay = 1
 endDay = 2
 fileName = 'timesheet.xlsx'
-host = {jiraHost}
-pat = {PersonalAccessToken}
-
+host = "https://jira.company.net/"
+pat = "pat"
 # ________________________________
 # 		End setup
 
@@ -26,9 +24,3 @@ print('Total sum: ', sum(totals.values()))
 
 tracker = TimesheetTracker(host=host, pat=pat)
 tracker.trackTime(worklogs)
-
-
-
-
-
-
